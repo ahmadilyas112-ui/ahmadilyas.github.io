@@ -1,0 +1,233 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #111;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    list-style: none;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    background-color: #e3e3e3;
+    color: #111;
+    border-radius: 5px;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('file:///C:/Users/DELL/Downloads/DALL%C2%B7E%202024-10-09%2016.27.09%20-%20A%20high-definition%20professional%20banner%20for%20a%20front-end%20developer%20portfolio%20website.%20The%20design%20should%20have%20a%20clean%20and%20modern%20aesthetic,%20with%20a%20minimal.webp'); /* Replace with your image path */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+/* About Section */
+#about {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#about button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#about button:hover {
+    background-color: #444;
+}
+
+/* Portfolio Section */
+/* Portfolio Section */
+#portfolio {
+    background-color: #f8f8f8;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 40px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.portfolio-item a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #111;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.portfolio-item .preview {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    transition: top 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item .preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+}
+
+.portfolio-item:hover .preview {
+    top: 100%;
+}
+
+/* Experience Section */
+#experience {
+    padding: 100px 50px;
+    background-color: #fff;
+}
+
+#experience h2 {
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+#experience p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffce00;
+}
