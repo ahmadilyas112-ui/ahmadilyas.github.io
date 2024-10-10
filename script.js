@@ -1,14 +1,32 @@
 $(document).ready(function() {
-    // Smooth scroll for navigation
-    $('nav a').click(function(e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 1000);
+    // Function to show the popup
+    function showPopup(popupId) {
+        $('.overlay').fadeIn();
+        $(popupId).fadeIn();
+    }
+
+    // Close popup and overlay
+    function closePopup() {
+        $('.overlay').fadeOut();
+        $('.popup-box').fadeOut();
+    }
+
+    // Show Contact Form popup when contact button is clicked
+    $('.contact-button').on('click', function(event) {
+        event.preventDefault();
+        showPopup('#contact-popup');
     });
 
-    // Resume download button click
-    $('#downloadResume').click(function() {
-        window.location.href = 'path-to-your-resume.pdf';  // Update the path
+    // Show Welcome Popup when page loads
+    showPopup('#welcome-popup');
+
+    // Close popups when close button is clicked
+    $('.close-btn, .close-welcome').on('click', function() {
+        closePopup();
+    });
+
+    // Close popup when overlay is clicked
+    $('.overlay').on('click', function() {
+        closePopup();
     });
 });
